@@ -42,6 +42,7 @@ do
   local _minimapFrame = CreateFrame("Frame")
   _minimapFrame:RegisterEvent("PLAYER_LOGIN")
   _minimapFrame:SetScript("OnEvent", function()
+    -- luacheck: globals MultiBotMinimapIconDB
     -- Initialise the saved variable for the icon position/visibility.
     MultiBotMinimapIconDB = MultiBotMinimapIconDB or {}
     if MultiBotMinimapIconDB.hide == nil then
